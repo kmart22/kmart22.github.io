@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div id = "wrapper">
+
+            <div id="headContainer">
+
+                <div id="loggedInDiv">
+                    <h2 id="usernameHeader"></h2>
+                </div>
+
+                <div id="userAccountDiv">
+
+                    <div id="userButtonsDiv">
+                        <button id="login-button">Login</button>
+                        <button id="create-user-button">Create Account</button>
+                    </div>
+
+                    
+
+                    <div id="userLoginDiv">
+                        <label for="loginEmailInput">Email:</label>
+                        <input type="text" id="loginEmailInput">
+                        <br>
+                        <label for="loginPasswordInput">Password:</label>
+                        <input type="password" id="loginPasswordInput">
+                        <br>
+                        <button id="enter-login-button">Login</button>
+                        <button id="cancel-login-button">Cancel</button>
+                    </div>
+
+                    <div id="createUserDiv">
+                        <label for="firstNameInput">First Name:</label>
+                        <input type="text" id="firstNameInput">
+                        <br>
+                        <label for="lastNameInput">Last Name:</label>
+                        <input type="text" id="lastNameInput">
+                        <br>
+                        <label for="emailAddressInput">Email:</label>
+                        <input type="text" id="emailAddressInput">
+                        <br>
+                        <label for="passwordInput">Password:</label>
+                        <input type="password" id="passwordInput">
+                        <br>
+                        <button id="enter-created-user-button">Create Account</button>
+                        <button id="cancel-create-user-button">Cancel</button>
+                    </div>
+
+                    <div id="loginErrorDiv">
+                        <h2 id="incorrectLoginHeader">Incorrect login credentials</h2>
+                        <h2 id="userAlreadyExistsHeader">User with that email already exists</h2>
+                    </div>
+
+                </div>
+
+                <h1>Grocery List Creator</h1>
+
+                <div id="listInputDiv">
+                    <h2 id="addItemsHeader">Add an item to your list</h2>
+
+                    <label for="item-name">Item:</label>
+                    <input type="text" id="item-name">
+
+                    <label for="category-name">Category:</label>
+                    <input type="text" id="category-name">
+
+                    <label for="location-name">Location:</label>
+                    <input type="text" id="location-name">
+
+                    
+
+                    <br>
+                    
+                    <label for="item-name">Price: $</label>
+                    <input type="text" id="price-name">
+
+                    <label for="priority-name">Priority:</label>
+                    <select id="priority-name">
+                        <option value="Very High">Very high</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+
+                    <button id="add-button">Add to list</button>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h2 id="yourGroceryListHeader">Your grocery list</h2>
+
+
+
+            <div id = "edit-container">
+                <h2> Edit Item </h2>
+
+                <label for="edit-item-name">Item:</label>
+                <input type="text" id="edit-item-name">
+
+                <label for="edit-category-name">Category:</label>
+                <input type="text" id="edit-category-name">
+
+                <label for="edit-location-name">Location:</label>
+                <input type="text" id="edit-location-name">
+
+                
+
+                <br>
+                
+                <label for="edit-item-name">Price: $</label>
+                <input type="text" id="edit-price-name">
+
+                <label for="edit-priority-name">Priority:</label>
+                <select id="edit-priority-name">
+                    <option value="Very High">Very high</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+
+                <button id="edit-add-button">Confirm</button>
+                <button id="cancel-edit-button">Cancel</button>
+            </div>
+    
+
+
+            <ol id="grocery-list"></ol>
+        </div>
+
+        <script src="app.js"></script>
+
+    </body>
+</html>

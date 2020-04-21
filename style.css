@@ -1,0 +1,101 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	background-color: gray;
+	text-align: center;
+}
+
+h1{
+	font-family: serif;
+	font-size: 3em;
+	font-style: oblique;
+}
+
+
+
+
+#wrapper{
+	width: 1200px;
+	background-color:snow;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: auto;
+	align-content: center;
+}
+
+#headContainer{
+	background-color: #C9FFFD;
+	line-height: 3;
+}
+
+
+#grocery-list{
+	/*width:900px;*/
+	text-align: left;
+	padding-left: 2em;
+	background-color: lightgray;
+}
+
+
+
+li{
+	list-style-type: "\231A";
+	/*word-spacing: 40px;*/
+
+}
+
+h3{
+	word-spacing: 40px;
+}
+
+#edit-container{
+	display: none;
+	line-height: 3;
+}
+
+/* #userAccountDiv{
+	
+} */
+
+#userLoginDiv{
+	display: none;
+	line-height: 2;
+	text-align: right;
+	padding-right: 3em;
+	padding-top: 0.75em;
+}
+
+#createUserDiv{
+	display: none;
+	line-height: 2;
+	text-align: right;
+	padding-right: 3em;
+	padding-top: 0.75em;
+}
+
+#userButtonsDiv{
+	text-align: right;
+	padding-right: 3em;
+	padding-top: 0.5em;
+}
+
+#loginErrorDiv{
+	text-align: right;
+	line-height: 0.5em;
+	padding-right: 3em;
+}
+
+
+
+#incorrectLoginHeader{
+	font-size: small;
+	color: red;
+}
+
+#userAlreadyExistsHeader{
+	font-size: small;
+	color: red;
+}
