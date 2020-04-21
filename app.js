@@ -69,10 +69,12 @@ enterLoginButton.onclick = function(){
             "Content-Type": "application/x-www-form-urlencoded"
         }
     }).then(function(response) {
-        loadGroceries()
+        if(response.status == 422){
+            document.getElementById("incorrectLoginHeader").style.display = "none";
+            document.getElementById("userAlreadyExistsHeader").style.display = "block";
+        };
+        loadGroceries();
         console.log("Are you: ", loginEmail, "?");
-        //document.getElementById("userAccountDiv").style.display = "none";
-       
         
     });
 
