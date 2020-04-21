@@ -70,8 +70,8 @@ enterLoginButton.onclick = function(){
         }
     }).then(function(response) {
         if(response.status == 422){
-            document.getElementById("incorrectLoginHeader").style.display = "none";
-            document.getElementById("userAlreadyExistsHeader").style.display = "block";
+            document.getElementById("incorrectLoginHeader").style.display = "block";
+            document.getElementById("userAlreadyExistsHeader").style.display = "none";
         };
         loadGroceries();
         console.log("Are you: ", loginEmail, "?");
