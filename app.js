@@ -69,12 +69,12 @@ enterLoginButton.onclick = function(){
             "Content-Type": "application/x-www-form-urlencoded"
         }
     }).then(function(response) {
-        if(response.status == 422){
+        if(response.status ==401){
             document.getElementById("incorrectLoginHeader").style.display = "block";
             document.getElementById("userAlreadyExistsHeader").style.display = "none";
         };
         loadGroceries();
-        console.log("Are you: ", loginEmail, "?");
+        // console.log("Are you: ", loginEmail, "?");
         
     });
 
@@ -210,6 +210,9 @@ function loadGroceries() {
             document.getElementById("userAccountDiv").style.display = "none";
             document.getElementById("yourGroceryListHeader").style.display = "block";
             document.getElementById("listInputDiv").style.display = "block";
+
+            document.getElementById("incorrectLoginHeader").style.display = "none";
+            document.getElementById("userAlreadyExistsHeader").style.display = "none";
 
             response.json().then(function(groceriesFromServer) {
                 groceries = groceriesFromServer;
